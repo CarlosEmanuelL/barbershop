@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 }senha.length <=5 -> {
                     mensagem(it, "A senha precisa ter pelo menos 6 caracteres!")
                 }else -> {
-
+                    navegarPraHome(nome)
                 }
             }
         }
@@ -44,7 +44,9 @@ class MainActivity : AppCompatActivity() {
         snackbar.setTextColor(Color.parseColor("#FFFFFF"))
         snackbar.show()
     }
-    private fun navegarPraHome(){
+    private fun navegarPraHome(nome: String){
         val intent = Intent(this, Home::class.java)
+        intent.putExtra("nome", nome)
+        startActivity(intent)
     }
 }
