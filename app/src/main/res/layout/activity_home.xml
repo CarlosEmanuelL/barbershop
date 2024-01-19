@@ -11,7 +11,7 @@
         android:id="@+id/txtNomeUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bem-vindo(a), Carlos"
+        android:text="Bem-vindo, Carlos"
         android:textSize="18sp"
         android:textColor="@color/white"
         android:gravity="center"
